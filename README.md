@@ -16,12 +16,13 @@ This project performs **Exploratory Data Analysis (EDA)** on the Titanic dataset
 
 ## 🚀 Getting Started
 
-### 🔧 Installation
+## 🛠️ Technologies Used
 
-1. Clone this repo or unzip the downloaded folder.
-2. Navigate into the project directory and install dependencies:
-
-```bash
+Python 3  
+Flask  
+HTML5  
+CSS3  
+Bootstrap 5
 
 ## 🔗 To Create Virtual Environment
 To create virtual env --> Python -m venv Name_of_Virtual_env (for e.g. --> python -m venv myenv)  
@@ -34,6 +35,4 @@ pip install flask
 
 ## 🚀 Live Demo  
 Check out the live deployed project here: [View Project on Render](https://celebal-task-3.onrender.com)
-
-
 
