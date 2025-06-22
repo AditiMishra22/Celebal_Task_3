@@ -1,15 +1,123 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
     <title>Titanic EDA Visualization</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f7f9fc;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        h1 {
+            color: #2c3e50;
+            margin-top: 30px;
+            font-size: 2.5em;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 30px;
+        }
+
+        .card {
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            margin: 20px 0;
+            padding: 20px;
+            max-width: 700px;
+            width: 90%;
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: scale(1.01);
+        }
+
+        .card h3 {
+            color: #34495e;
+            font-size: 1.4em;
+            margin-bottom: 15px;
+        }
+
+        .card img {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        @media (max-width: 600px) {
+            .card img {
+                width: 100%;
+            }
+
+            h1 {
+                font-size: 2em;
+            }
+        }
+    </style>
 </head>
-<body style="text-align:center; font-family:sans-serif;">
+<body>
+
     <h1>Titanic Data Visualizations</h1>
-    <h3>Survival Count</h3>
-    <img src="/static/visualizations/survival_count.png" width="500">
-    <h3>Age Distribution</h3>
-    <img src="/static/visualizations/age_distribution.png" width="500">
-    <h3>Passenger Class vs Survival</h3>
-    <img src="/static/visualizations/class_vs_survival.png" width="500">
+
+    <div class="container">
+        <div class="card">
+            <h3>Survival Count</h3>
+            <img src="/static/visualizations/survival_count.png" alt="Survival Count">
+        </div>
+
+        <div class="card">
+            <h3>Age Distribution</h3>
+            <img src="/static/visualizations/age_distribution.png" alt="Age Distribution">
+        </div>
+
+        <div class="card">
+            <h3>Passenger Class vs Survival</h3>
+            <img src="/static/visualizations/class_vs_survival.png" alt="Class vs Survival">
+        </div>
+
+        <div class="card">
+            <h3>Gender Distribution</h3>
+            <img src="/static/visualizations/gender_distribution.png" alt="Gender Distribution">
+        </div>
+
+        <div class="card">
+            <h3>Gender vs Survival</h3>
+            <img src="/static/visualizations/gender_vs_survival.png" alt="Gender vs Survival">
+        </div>
+
+        <div class="card">
+            <h3>Fare Distribution</h3>
+            <img src="/static/visualizations/fare_distribution.png" alt="Fare Distribution">
+        </div>
+
+        <div class="card">
+            <h3>Embarkation Port Distribution</h3>
+            <img src="/static/visualizations/embarked_distribution.png" alt="Embarked Port Distribution">
+        </div>
+
+        <div class="card">
+            <h3>Survival by Embarkation Port</h3>
+            <img src="/static/visualizations/embarked_vs_survival.png" alt="Embarked vs Survival">
+        </div>
+
+        <div class="card">
+            <h3>Age vs Fare (Colored by Survival)</h3>
+            <img src="/static/visualizations/age_vs_fare.png" alt="Age vs Fare">
+        </div>
+
+        <div class="card">
+            <h3>Correlation Heatmap</h3>
+            <img src="/static/visualizations/correlation_heatmap.png" alt="Correlation Heatmap">
+        </div>
+    </div>
+
 </body>
 </html>
